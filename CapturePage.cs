@@ -14,7 +14,7 @@ using System.Text;
 namespace CaptureWebPage
 {
     [Guid("AE07101B-46D4-4a98-AF68-0333EA26E113")]
-    [BandObject("CapturePage", BandObjectStyle.Horizontal | BandObjectStyle.ExplorerToolbar | BandObjectStyle.TaskbarToolBar, HelpText = "Capture web page.")]
+    [BandObject("CapturePage", BandObjectStyle.Horizontal | BandObjectStyle.ExplorerToolbar | BandObjectStyle.TaskbarToolBar, HelpText = "Capture webpage.")]
     public class CapturePage : BandObject
     {
         #region DllImports
@@ -92,14 +92,14 @@ namespace CaptureWebPage
             this.MinSize = new System.Drawing.Size(150, 24);
             this.Name = "CapturePage";
             this.Size = new System.Drawing.Size(150, 24);
-            this.Title = "Hello Bar";
+            this.Title = "Capture Page";
             this.ResumeLayout(false);
 
         }
         #endregion
 
         /// <summary>
-        /// Button Clieck
+        /// Button Click
         /// </summary>
         private void CaptureButton_Click(object sender, System.EventArgs e)
         {
@@ -112,10 +112,11 @@ namespace CaptureWebPage
         /// </summary>
         public static void CaptureWebpageToPic(string strURL)
         {
+            //For save path/folder, need consider to create if not exists, so it's permission issue
             string picName = DateTime.UtcNow.ToFileTime().ToString();
             string t_strSaveFolder = "c:\\tests";
-            string t_strLargeImage = t_strSaveFolder + "\\" + picName + ".png";
-            WebsiteToImage websiteToImage = new WebsiteToImage(strURL, t_strLargeImage);
+            string t_strImage = t_strSaveFolder + "\\" + picName + ".png";
+            WebsiteToImage websiteToImage = new WebsiteToImage(strURL, t_strImage);
             websiteToImage.Generate();
         }
 
@@ -128,19 +129,15 @@ namespace CaptureWebPage
             var childHandle = FindWindowEx(IntPtr.Zero, IntPtr.Zero, "IEFrame", null);
             if (childHandle != IntPtr.Zero)
             {
-                //get the handle to the address bar on IE
                 childHandle = FindWindowEx(childHandle, IntPtr.Zero, "WorkerW", null);
                 if (childHandle != IntPtr.Zero)
                 {
-                    //get handle to edit
                     childHandle = FindWindowEx(childHandle, IntPtr.Zero, "ReBarWindow32", null);
                     if (childHandle != IntPtr.Zero)
                     {
-                        // get a handle to comboBoxEx32
                         childHandle = FindWindowEx(childHandle, IntPtr.Zero, "Address Band Root", null);
                         if (childHandle != IntPtr.Zero)
                         {
-                            // get a handle to combo box
                             childHandle = FindWindowEx(childHandle, IntPtr.Zero, "Edit", null);
                             if (childHandle != IntPtr.Zero)
                             {

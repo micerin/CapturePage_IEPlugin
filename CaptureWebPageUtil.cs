@@ -71,6 +71,9 @@ namespace CaptureWebPage
         }
     }
 
+    /// <summary>
+    /// Extension for Bitmap
+    /// </summary>
     public static class BitmapExtensions
     {
         public static void SaveJPG100(this Bitmap bmp, string filename)
