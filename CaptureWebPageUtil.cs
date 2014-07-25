@@ -6,6 +6,9 @@ using System.Windows.Forms;
 
 namespace CaptureWebPage
 {
+    /// <summary>
+    /// Utility class to save webpage to image
+    /// </summary>
     public class WebsiteToImage
     {
         private Bitmap m_Bitmap;

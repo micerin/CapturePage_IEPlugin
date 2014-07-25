@@ -13,7 +13,6 @@ using System.Text;
 
 namespace CaptureWebPage
 {
-
     [Guid("AE07101B-46D4-4a98-AF68-0333EA26E113")]
     [BandObject("CapturePage", BandObjectStyle.Horizontal | BandObjectStyle.ExplorerToolbar | BandObjectStyle.TaskbarToolBar, HelpText = "Capture web page.")]
     public class CapturePage : BandObject
@@ -46,7 +45,7 @@ namespace CaptureWebPage
 
         public const int WM_GETTEXTLENGTH = 0x000E;
         public const int WM_GETTEXT = 0x000D;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button CaptureButton;
         private System.ComponentModel.Container components = null;
 
         public CapturePage()
@@ -67,29 +66,31 @@ namespace CaptureWebPage
         #region Component Designer generated code
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.CaptureButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // CaptureButton
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.button1.FlatAppearance.BorderSize = 3;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Menu;
-            this.button1.Location = new System.Drawing.Point(19, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 24);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "CapturePage";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-
-            this.Controls.Add(this.button1);
+            this.CaptureButton.BackColor = System.Drawing.SystemColors.Highlight;
+            this.CaptureButton.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.CaptureButton.FlatAppearance.BorderSize = 3;
+            this.CaptureButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
+            this.CaptureButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.CaptureButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CaptureButton.ForeColor = System.Drawing.SystemColors.Menu;
+            this.CaptureButton.Location = new System.Drawing.Point(19, 0);
+            this.CaptureButton.Name = "CaptureButton";
+            this.CaptureButton.Size = new System.Drawing.Size(95, 24);
+            this.CaptureButton.TabIndex = 0;
+            this.CaptureButton.Text = "CapturePage";
+            this.CaptureButton.UseVisualStyleBackColor = false;
+            this.CaptureButton.Click += new System.EventHandler(this.CaptureButton_Click);
+            // 
+            // CapturePage
+            // 
+            this.Controls.Add(this.CaptureButton);
             this.MinSize = new System.Drawing.Size(150, 24);
-            this.Name = "HelloWorldBar";
+            this.Name = "CapturePage";
             this.Size = new System.Drawing.Size(150, 24);
             this.Title = "Hello Bar";
             this.ResumeLayout(false);
@@ -100,7 +101,7 @@ namespace CaptureWebPage
         /// <summary>
         /// Button Clieck
         /// </summary>
-        private void button1_Click(object sender, System.EventArgs e)
+        private void CaptureButton_Click(object sender, System.EventArgs e)
         {
             string strURL = GetActiveUrl();
             CaptureWebpageToPic(strURL);

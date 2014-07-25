@@ -3,3 +3,4 @@ C:\Users\jeffzhu.FAREAST\Documents\GitHub\CaptuePageIEPlugin\obj\Release\Capture
 C:\Users\jeffzhu.FAREAST\Documents\GitHub\CaptuePageIEPlugin\obj\Release\CaptureWebPage.Properties.Resources.resources
 C:\Users\jeffzhu.FAREAST\Documents\GitHub\CaptuePageIEPlugin\obj\Release\CapturePage.csproj.GenerateResource.Cache
 C:\Users\jeffzhu.FAREAST\Documents\GitHub\CaptuePageIEPlugin\obj\Release\CaptureWebPage.dll
+C:\Users\jeffzhu.FAREAST\Documents\GitHub\CaptuePageIEPlugin\obj\Release\CapturePage.csprojResolveAssemblyReference.cache
