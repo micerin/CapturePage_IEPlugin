@@ -1,0 +1,13 @@
+C:\Users\jeffzhu.FAREAST\Documents\Visual Studio 2012\Projects\plugin\SampleBars\obj\Release\SampleBars.csprojResolveAssemblyReference.cache
+C:\Users\jeffzhu.FAREAST\Documents\Visual Studio 2012\Projects\plugin\SampleBars\obj\Release\SampleBars.csproj.GenerateResource.Cache
+C:\Users\jeffzhu.FAREAST\Documents\Visual Studio 2012\Projects\plugin\SampleBars\bin\Release\WebsitesScreenshot.dll
+C:\Users\jeffzhu.FAREAST\Documents\Visual Studio 2012\Projects\plugin\SampleBars\bin\Release\CaptureWebPage.dll
+C:\Users\jeffzhu.FAREAST\Documents\Visual Studio 2012\Projects\plugin\SampleBars\obj\Release\CaptureWebPage.HelloWorldBar.resources
+C:\Users\jeffzhu.FAREAST\Documents\Visual Studio 2012\Projects\plugin\SampleBars\obj\Release\CaptureWebPage.dll
+C:\Users\jeffzhu.FAREAST\Documents\Visual Studio 2012\Projects\plugin\SampleBars\obj\Release\CaptureWebPage.Properties.Resources.resources
+C:\Users\jeffzhu.FAREAST\Documents\GitHub\CaptuePageIEPlugin\obj\Release\SampleBars.csprojResolveAssemblyReference.cache
+C:\Users\jeffzhu.FAREAST\Documents\GitHub\CaptuePageIEPlugin\obj\Release\CaptureWebPage.Properties.Resources.resources
+C:\Users\jeffzhu.FAREAST\Documents\GitHub\CaptuePageIEPlugin\obj\Release\SampleBars.csproj.GenerateResource.Cache
+C:\Users\jeffzhu.FAREAST\Documents\GitHub\CaptuePageIEPlugin\obj\Release\CaptureWebPage.dll
+C:\Users\jeffzhu.FAREAST\Documents\GitHub\CaptuePageIEPlugin\bin\Release\CaptureWebPage.dll
+C:\Users\jeffzhu.FAREAST\Documents\GitHub\CaptuePageIEPlugin\obj\Release\CaptureWebPage.CapturePage.resources

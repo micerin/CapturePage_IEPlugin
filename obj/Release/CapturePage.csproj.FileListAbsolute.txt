@@ -1,0 +1,5 @@
+C:\Users\jeffzhu.FAREAST\Documents\GitHub\CaptuePageIEPlugin\bin\Release\CaptureWebPage.dll
+C:\Users\jeffzhu.FAREAST\Documents\GitHub\CaptuePageIEPlugin\obj\Release\CaptureWebPage.CapturePage.resources
+C:\Users\jeffzhu.FAREAST\Documents\GitHub\CaptuePageIEPlugin\obj\Release\CaptureWebPage.Properties.Resources.resources
+C:\Users\jeffzhu.FAREAST\Documents\GitHub\CaptuePageIEPlugin\obj\Release\CapturePage.csproj.GenerateResource.Cache
+C:\Users\jeffzhu.FAREAST\Documents\GitHub\CaptuePageIEPlugin\obj\Release\CaptureWebPage.dll

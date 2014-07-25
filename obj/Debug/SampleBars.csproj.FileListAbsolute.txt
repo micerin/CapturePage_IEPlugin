@@ -1,0 +1,7 @@
+C:\Users\jeffzhu.FAREAST\Documents\Visual Studio 2012\Projects\plugin\SampleBars\bin\Debug\SampleBars.dll
+C:\Users\jeffzhu.FAREAST\Documents\Visual Studio 2012\Projects\plugin\SampleBars\bin\Debug\SampleBars.pdb
+C:\Users\jeffzhu.FAREAST\Documents\Visual Studio 2012\Projects\plugin\SampleBars\obj\Debug\SampleBars.csprojResolveAssemblyReference.cache
+C:\Users\jeffzhu.FAREAST\Documents\Visual Studio 2012\Projects\plugin\SampleBars\obj\Debug\SampleBars.HelloWorldBar.resources
+C:\Users\jeffzhu.FAREAST\Documents\Visual Studio 2012\Projects\plugin\SampleBars\obj\Debug\SampleBars.csproj.GenerateResource.Cache
+C:\Users\jeffzhu.FAREAST\Documents\Visual Studio 2012\Projects\plugin\SampleBars\obj\Debug\SampleBars.dll
+C:\Users\jeffzhu.FAREAST\Documents\Visual Studio 2012\Projects\plugin\SampleBars\obj\Debug\SampleBars.pdb
