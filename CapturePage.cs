@@ -18,9 +18,7 @@ namespace CaptureWebPage
     [BandObject("CapturePage", BandObjectStyle.Horizontal | BandObjectStyle.ExplorerToolbar | BandObjectStyle.TaskbarToolBar, HelpText = "Capture web page.")]
     public class CapturePage : BandObject
     {
-        private System.Windows.Forms.Button button1;
-        private System.ComponentModel.Container components = null;
-
+        #region DllImports
         [DllImport("user32")]
         public static extern IntPtr GetForegroundWindow();
 
@@ -44,9 +42,12 @@ namespace CaptureWebPage
 
         [DllImport("user32.dll", EntryPoint = "FindWindowEx")]
         private static extern IntPtr FindWindowEx(IntPtr _Parent, IntPtr childAfter, string _ClassName, string _WindowName);
+        #endregion DllImports
 
         public const int WM_GETTEXTLENGTH = 0x000E;
         public const int WM_GETTEXT = 0x000D;
+        private System.Windows.Forms.Button button1;
+        private System.ComponentModel.Container components = null;
 
         public CapturePage()
         {
@@ -85,9 +86,7 @@ namespace CaptureWebPage
             this.button1.Text = "CapturePage";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // HelloWorldBar
-            // 
+
             this.Controls.Add(this.button1);
             this.MinSize = new System.Drawing.Size(150, 24);
             this.Name = "HelloWorldBar";
@@ -98,24 +97,18 @@ namespace CaptureWebPage
         }
         #endregion
 
+        /// <summary>
+        /// Button Clieck
+        /// </summary>
         private void button1_Click(object sender, System.EventArgs e)
         {
-            //var searchContent = this.textBox1.Text;
-            //if (searchContent.Equals(null) || searchContent.Equals(string.Empty))
-            //{
-            //    Process.Start("www.bing.com");
-            //}
-            //else
-            //{
-            //    Process.Start(string.Format("http://www.bing.com/search?q={0}", searchContent));
-            //}
-
-            //MessageBox.Show(searchContent);
-
             string strURL = GetActiveUrl();
             CaptureWebpageToPic(strURL);
         }
 
+        /// <summary>
+        /// Capture Webpage with given URL to png
+        /// </summary>
         public static void CaptureWebpageToPic(string strURL)
         {
             string picName = DateTime.UtcNow.ToFileTime().ToString();
@@ -125,42 +118,9 @@ namespace CaptureWebPage
             websiteToImage.Generate();
         }
 
-        //private static void SaveWebPageByACAWebThumb(string strURL)
-        //{
-        //    string picName = DateTime.UtcNow.ToFileTime().ToString();
-        //    string t_strSaveFolder = "c:\\tests";
-        //    string t_strLargeImage = t_strSaveFolder + "\\" + picName + ".png";
-
-        //    // Create instance
-        //    ThumbMakerClass t_xThumbMaker = new ACAWebThumbLib.ThumbMakerClass();
-
-        //    t_xThumbMaker.SetURL("strURL");
-        //    t_xThumbMaker.StartSnap();
-
-        //    // Save the captured web page to image with full size in C#
-        //    t_xThumbMaker.SaveImage(t_strLargeImage);
-
-        //    MessageBox.Show(t_strLargeImage + " done!");
-        //}
-
-        private static void SaveWebPageByWebSiteScreenShot(string strURL)
-        {
-            WebsitesScreenshot.WebsitesScreenshot _Obj;
-            _Obj = new WebsitesScreenshot.WebsitesScreenshot();
-            WebsitesScreenshot.WebsitesScreenshot.Result _Result;
-            _Result = _Obj.CaptureWebpage(strURL);
-            string picName = DateTime.UtcNow.ToFileTime().ToString();
-            if (_Result == WebsitesScreenshot.WebsitesScreenshot.Result.Captured)
-            {
-                _Obj.ImageFormat = WebsitesScreenshot.
-                    WebsitesScreenshot.ImageFormats.JPG;
-                _Obj.BrowserHeight = 1500;
-                _Obj.BrowserWidth = 800;
-                _Obj.SaveImage(string.Format("c:\\tests\\{0}.jpg", picName));
-            }
-            _Obj.Dispose();
-        }
-
+        /// <summary>
+        /// Get current active URL for IE
+        /// </summary>
         public static string GetActiveUrl()
         {
             string strURL = string.Empty;
