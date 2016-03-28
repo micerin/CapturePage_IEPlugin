@@ -1,4 +1,5 @@
-This is a IE plugin based on BandObject, written in C#
+This is an IE plugin project based on BandObject, written in C#
+------
 
-1) It could capture webpage into *png file, and store to local, based on current active page in IE
-2) Tested on IE11, which hosted on Win7
+1) It could capture webpage into *png file, and store into local directory, based on current `active page` in IE <br>
+2) Tested with Internet Explorer 11 on Win7
